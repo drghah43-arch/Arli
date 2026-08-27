@@ -385,3 +385,327 @@ footer {
         font-size: 16px;
     }
 }
+/* ================================= */
+/* شاشة الترحيب */
+/* ================================= */
+
+.welcome-screen {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #7b00ff33,
+            transparent 40%
+        ),
+        #050509;
+
+    z-index: 9999;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+
+/* صندوق الترحيب */
+
+.welcome-box {
+    width: 90%;
+    max-width: 700px;
+
+    text-align: center;
+
+    padding: 50px 25px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 0 30px #7b00ff55,
+        0 0 80px #00d9ff22;
+
+    animation: welcomeFloat 3s infinite alternate;
+}
+
+
+@keyframes welcomeFloat {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* الخط */
+
+.welcome-line {
+
+    width: 100px;
+    height: 4px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #7b00ff,
+        #00d9ff,
+        #7b00ff
+    );
+
+    box-shadow:
+        0 0 15px #00d9ff,
+        0 0 30px #7b00ff;
+}
+
+
+/* العنوان */
+
+.welcome-title {
+
+    font-size: 30px;
+
+    color: white;
+
+    text-shadow:
+        0 0 10px #fff,
+        0 0 25px #7b00ff;
+
+    margin-bottom: 15px;
+}
+
+
+/* ARLI GAMES */
+
+.welcome-logo {
+
+    font-size: 55px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #00d9ff,
+        #a855ff,
+        #ffffff
+    );
+
+    background-size: 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    animation: textMove 4s linear infinite;
+
+    text-shadow: none;
+}
+
+
+/* النص */
+
+.welcome-text {
+
+    color: #aaa;
+
+    margin-top: 15px;
+
+    font-size: 17px;
+}
+
+
+/* زر الدخول */
+
+.enter-btn {
+
+    margin-top: 30px;
+
+    padding: 16px 45px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #7b00ff,
+        #00aaff
+    );
+
+    box-shadow:
+        0 0 15px #7b00ff,
+        0 0 35px #00d9ff55;
+
+    transition: 0.3s;
+}
+
+
+.enter-btn:hover {
+
+    transform:
+        scale(1.08)
+        translateY(-3px);
+
+    box-shadow:
+        0 0 20px #ffffff,
+        0 0 40px #7b00ff,
+        0 0 70px #00d9ff;
+}
+
+
+/* ================================= */
+/* إخفاء شاشة الترحيب */
+/* ================================= */
+
+.welcome-screen.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+/* ================================= */
+/* الموقع الرئيسي */
+/* ================================= */
+
+.main-site {
+
+    opacity: 0;
+
+    transition: opacity 1s ease;
+
+    min-height: 100vh;
+}
+
+
+.main-site.show {
+
+    opacity: 1;
+}
+
+
+/* ================================= */
+/* معلومات صاحب ومصمم الموقع */
+/* ================================= */
+
+.site-info {
+
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    text-align: right;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    box-shadow:
+        0 0 15px #7b00ff22;
+}
+
+
+.site-info strong {
+
+    color: #00d9ff;
+
+    text-shadow:
+        0 0 8px #00d9ff;
+}
+
+
+/* ================================= */
+/* تعديل مساحة الصفحة */
+/* ================================= */
+
+.main-site .container {
+
+    padding-top: 100px;
+}
+
+
+/* ================================= */
+/* الموبايل */
+/* ================================= */
+
+@media (max-width: 600px) {
+
+    .welcome-title {
+        font-size: 22px;
+    }
+
+    .welcome-logo {
+        font-size: 38px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+    }
+
+    .enter-btn {
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+
+    .site-info {
+
+        top: 10px;
+        right: 10px;
+
+        font-size: 11px;
+
+        padding: 8px 12px;
+    }
+
+    .main-site .container {
+        padding-top: 110px;
+    }
+
+}
