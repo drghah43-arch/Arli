@@ -12,190 +12,220 @@
 
 <body>
 
-    <div class="container">
+    <!-- ========================= -->
+    <!-- شاشة الترحيب -->
+    <!-- ========================= -->
 
-        <!-- PROFILE -->
+    <section class="welcome-screen" id="welcomeScreen">
 
-        <div class="profile">
+        <div class="welcome-box">
 
-            <!-- حط صورة اليوتيوبر باسم profile.png -->
-            <img
-                src="profile.png"
-                class="profile-img"
-                alt="Arli Games">
+            <div class="welcome-line"></div>
 
-            <!-- اسم اليوتيوبر -->
-            <h1 class="name">『 ARLI GAMES 』</h1>
+            <h1 class="welcome-title">
+                『 أهلاً بكم في موقع 』
+            </h1>
 
-            <!-- الألعاب -->
-            <p class="bio">
-                🎮 Roblox | Minecraft | And Other Games ⚡
+            <h2 class="welcome-logo">
+                ARLI GAMES
+            </h2>
+
+            <p class="welcome-text">
+                🎮 عالم الألعاب يبدأ من هنا ⚡
             </p>
+
+            <button
+                class="enter-btn"
+                onclick="enterWebsite()">
+
+                ✦ الدخول للموقع ✦
+
+            </button>
 
         </div>
 
-
-        <!-- SOCIAL LINKS -->
-
-        <div class="links">
-
-            <!-- YouTube -->
-            <a
-                href="https://youtube.com/@arli3320"
-                target="_blank"
-                class="link">
-
-                <span class="icon">▶️</span>
-
-                YouTube
-
-            </a>
+    </section>
 
 
-            <!-- Discord -->
-            <a
-                href="https://discord.gg/tmbV9aR7C"
-                target="_blank"
-                class="link">
+    <!-- ========================= -->
+    <!-- الموقع الرئيسي -->
+    <!-- ========================= -->
 
-                <span class="icon">💬</span>
+    <main class="main-site" id="mainSite">
 
-                Discord
+        <!-- معلومات الموقع -->
 
-            </a>
+        <div class="site-info">
 
+            <div>
+                <strong>صاحب الموقع:</strong>
+                أريس
+            </div>
 
-            <!-- Instagram -->
-            <a
-                href="https://www.instagram.com/arli.games"
-                target="_blank"
-                class="link">
-
-                <span class="icon">📸</span>
-
-                Instagram
-
-            </a>
-
-
-            <!-- TikTok -->
-            <a
-                href="https://www.tiktok.com/@arli.games"
-                target="_blank"
-                class="link">
-
-                <span class="icon">🎵</span>
-
-                TikTok
-
-            </a>
-
-        </div>
-
-
-        <!-- MINECRAFT BEDROCK SERVER -->
-
-        <div class="minecraft">
-
-            <h2>⛏️ Minecraft Bedrock</h2>
-
-            <p>
-                🔥 ادخل سيرفر Arli Games والعب معانا!
-            </p>
-
-
-            <div class="server-box">
-
-                <!-- IP -->
-                <div class="server-info">
-
-                    IP:
-                    <span id="serverIP">
-                        arligames3320-GOFK.aternos.me
-                    </span>
-
-                </div>
-
-
-                <!-- PORT -->
-                <div class="server-info">
-
-                    Port:
-                    <span id="serverPort">
-                        60000
-                    </span>
-
-                </div>
-
-
-                <!-- زر النسخ -->
-                <button
-                    class="copy-btn"
-                    onclick="showCopyOptions()">
-
-                    📋 نسخ بيانات السيرفر
-
-                </button>
-
+            <div>
+                <strong>مصمم الموقع:</strong>
+                أحمد المصري
             </div>
 
         </div>
 
 
-        <!-- FOOTER -->
+        <div class="container">
 
-        <footer>
+            <!-- PROFILE -->
 
-            © 2026 Arli Games — All Rights Reserved 🎮
+            <div class="profile">
 
-        </footer>
+                <img
+                    src="profile.png"
+                    class="profile-img"
+                    alt="Arli Games">
 
-    </div>
+                <h1 class="name">
+                    『 ARLI GAMES 』
+                </h1>
+
+                <p class="bio">
+                    🎮 Roblox | Minecraft | And Other Games ⚡
+                </p>
+
+            </div>
 
 
-    <!-- COPY SCRIPT -->
+            <!-- ========================= -->
+            <!-- روابط السوشيال -->
+            <!-- ========================= -->
+
+            <div class="links">
+
+                <!-- YouTube -->
+
+                <a
+                    href="https://youtube.com/@arli3320"
+                    target="_blank"
+                    class="link">
+
+                    <img
+                        src="youtube.png"
+                        class="link-icon"
+                        alt="YouTube">
+
+                    <span>
+                        YouTube
+                    </span>
+
+                </a>
+
+
+                <!-- Discord -->
+
+                <a
+                    href="https://discord.gg/tmbV9aR7C"
+                    target="_blank"
+                    class="link">
+
+                    <img
+                        src="discord.png"
+                        class="link-icon"
+                        alt="Discord">
+
+                    <span>
+                        Discord
+                    </span>
+
+                </a>
+
+
+                <!-- Instagram -->
+
+                <a
+                    href="https://www.instagram.com/arli.games"
+                    target="_blank"
+                    class="link">
+
+                    <img
+                        src="instagram.png"
+                        class="link-icon"
+                        alt="Instagram">
+
+                    <span>
+                        Instagram
+                    </span>
+
+                </a>
+
+
+                <!-- TikTok -->
+
+                <a
+                    href="https://www.tiktok.com/@arli.games"
+                    target="_blank"
+                    class="link">
+
+                    <img
+                        src="tiktok.png"
+                        class="link-icon"
+                        alt="TikTok">
+
+                    <span>
+                        TikTok
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- ========================= -->
+            <!-- Minecraft -->
+            <!-- ========================= -->
+
+            <div class="minecraft">
+
+                <h2>
+                    ⛏️ Minecraft Bedrock
+                </h2>
+
+                <p>
+                    تابعنا عشان تعرف مواعيد اللعب والسيرفرات 🔥
+                </p>
+
+            </div>
+
+
+            <!-- Footer -->
+
+            <footer>
+                © 2026 ARLI GAMES — All Rights Reserved
+            </footer>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- JavaScript -->
+    <!-- ========================= -->
 
     <script>
 
-        function showCopyOptions() {
+        function enterWebsite() {
 
-            const choice = prompt(
-                "📋 ماذا تريد أن تنسخ؟\n\n" +
-                "1 - نسخ IP السيرفر\n" +
-                "2 - نسخ Port السيرفر\n\n" +
-                "اكتب 1 أو 2"
-            );
+            const welcome =
+                document.getElementById("welcomeScreen");
 
-
-            if (choice === "1") {
-
-                const ip =
-                    document.getElementById("serverIP").innerText;
-
-                navigator.clipboard.writeText(ip);
-
-                alert("✅ تم نسخ IP السيرفر!");
-
-            }
+            const main =
+                document.getElementById("mainSite");
 
 
-            else if (choice === "2") {
+            welcome.classList.add("hide");
 
-                const port =
-                    document.getElementById("serverPort").innerText;
+            setTimeout(function () {
 
-                navigator.clipboard.writeText(port);
+                main.classList.add("show");
 
-                alert("✅ تم نسخ Port السيرفر!");
-
-            }
-
-
-            else {
-
-                alert("❌ اختيار غير صحيح!");
-
-            }
+            }, 400);
 
         }
 
