@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arli Games | Official</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- PROFILE -->
+
+        <div class="profile">
+
+            <!-- حط صورة اليوتيوبر باسم profile.png -->
+            <img
+                src="profile.png"
+                class="profile-img"
+                alt="Arli Games">
+
+            <!-- اسم اليوتيوبر -->
+            <h1 class="name">『 ARLI GAMES 』</h1>
+
+            <!-- الألعاب -->
+            <p class="bio">
+                🎮 Roblox | Minecraft | And Other Games ⚡
+            </p>
+
+        </div>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="links">
+
+            <!-- YouTube -->
+            <a
+                href="https://youtube.com/@arli3320"
+                target="_blank"
+                class="link">
+
+                <span class="icon">▶️</span>
+
+                YouTube
+
+            </a>
+
+
+            <!-- Discord -->
+            <a
+                href="https://discord.gg/tmbV9aR7C"
+                target="_blank"
+                class="link">
+
+                <span class="icon">💬</span>
+
+                Discord
+
+            </a>
+
+
+            <!-- Instagram -->
+            <a
+                href="https://www.instagram.com/arli.games"
+                target="_blank"
+                class="link">
+
+                <span class="icon">📸</span>
+
+                Instagram
+
+            </a>
+
+
+            <!-- TikTok -->
+            <a
+                href="https://www.tiktok.com/@arli.games"
+                target="_blank"
+                class="link">
+
+                <span class="icon">🎵</span>
+
+                TikTok
+
+            </a>
+
+        </div>
+
+
+        <!-- MINECRAFT BEDROCK SERVER -->
+
+        <div class="minecraft">
+
+            <h2>⛏️ Minecraft Bedrock</h2>
+
+            <p>
+                🔥 ادخل سيرفر Arli Games والعب معانا!
+            </p>
+
+
+            <div class="server-box">
+
+                <!-- IP -->
+                <div class="server-info">
+
+                    IP:
+                    <span id="serverIP">
+                        arligames3320-GOFK.aternos.me
+                    </span>
+
+                </div>
+
+
+                <!-- PORT -->
+                <div class="server-info">
+
+                    Port:
+                    <span id="serverPort">
+                        60000
+                    </span>
+
+                </div>
+
+
+                <!-- زر النسخ -->
+                <button
+                    class="copy-btn"
+                    onclick="showCopyOptions()">
+
+                    📋 نسخ بيانات السيرفر
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            © 2026 Arli Games — All Rights Reserved 🎮
+
+        </footer>
+
+    </div>
+
+
+    <!-- COPY SCRIPT -->
+
+    <script>
+
+        function showCopyOptions() {
+
+            const choice = prompt(
+                "📋 ماذا تريد أن تنسخ؟\n\n" +
+                "1 - نسخ IP السيرفر\n" +
+                "2 - نسخ Port السيرفر\n\n" +
+                "اكتب 1 أو 2"
+            );
+
+
+            if (choice === "1") {
+
+                const ip =
+                    document.getElementById("serverIP").innerText;
+
+                navigator.clipboard.writeText(ip);
+
+                alert("✅ تم نسخ IP السيرفر!");
+
+            }
+
+
+            else if (choice === "2") {
+
+                const port =
+                    document.getElementById("serverPort").innerText;
+
+                navigator.clipboard.writeText(port);
+
+                alert("✅ تم نسخ Port السيرفر!");
+
+            }
+
+
+            else {
+
+                alert("❌ اختيار غير صحيح!");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
